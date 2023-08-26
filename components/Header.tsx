@@ -10,7 +10,6 @@ export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
-  console.log(Date.now());
   return (
     <header className="relative z-[999]">
       <motion.div
