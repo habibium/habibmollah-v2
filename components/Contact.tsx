@@ -4,6 +4,8 @@ import useSectionInView from "@/lib/hooks";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import SendEmailButton from "./SendEmailButton";
+import sendEmail from "@/actions/sendEmail";
+import { toast } from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -24,7 +26,18 @@ export default function Contact() {
         or through this form.
       </p>
 
-      <form className="mt-10 flex flex-col dark:text-black" action="">
+      <form
+        className="mt-10 flex flex-col dark:text-black"
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+          toast.success("Email sent successfully");
+        }}
+      >
         <input
           className="borderBlack h-14 rounded-lg px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           name="senderEmail"
@@ -38,7 +51,7 @@ export default function Contact() {
           name="message"
           required
           maxLength={5000}
-          placeholder="Your message. e.g. Hello, I would like to collaborate with you?"
+          placeholder="Your message. e.g. Hello, I would like to collaborate with you..."
         />
         <SendEmailButton />
       </form>
