@@ -52,3 +52,25 @@ export const projectsData = [
     imageUrl: wordanalyticsImg,
   },
 ] as const;
+
+export const skillsData = [
+  { name: "HTML", icon: "TbBrandHtml5" },
+  { name: "CSS", icon: "css-icon-url" },
+  { name: "JavaScript", icon: "js-icon-url" },
+  { name: "TypeScript", icon: "ts-icon-url" },
+  { name: "React", icon: "react-icon-url" },
+  { name: "Next.js", icon: "nextjs-icon-url" },
+  { name: "Node.js", icon: "nodejs-icon-url" },
+  { name: "Git", icon: "git-icon-url" },
+  { name: "Tailwind", icon: "tailwind-icon-url" },
+  { name: "Prisma", icon: "prisma-icon-url" },
+  { name: "MongoDB", icon: "mongodb-icon-url" },
+  { name: "Redux", icon: "redux-icon-url" },
+  { name: "GraphQL", icon: "graphql-icon-url" },
+  { name: "Apollo", icon: "apollo-icon-url" },
+  { name: "Express", icon: "express-icon-url" },
+  { name: "PostgreSQL", icon: "postgresql-icon-url" },
+  { name: "Python", icon: "python-icon-url" },
+  { name: "Django", icon: "django-icon-url" },
+  { name: "Framer Motion", icon: "framer-motion-icon-url" },
+] as const;
