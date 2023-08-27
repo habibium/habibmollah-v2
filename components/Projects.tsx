@@ -12,11 +12,13 @@ export default function Projects() {
   return (
     <section id="projects" ref={ref}>
       <SectionHeading>My Projects</SectionHeading>
-      {projectsData.map((project, index) => (
-        <Fragment key={index}>
-          <Project {...project} />
-        </Fragment>
-      ))}
+      <div>
+        {projectsData.map((project, index) => (
+          <Fragment key={index}>
+            <Project {...project} />
+          </Fragment>
+        ))}
+      </div>
     </section>
   );
 }
