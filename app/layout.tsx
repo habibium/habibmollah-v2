@@ -6,6 +6,7 @@ import ActiveSectionContextProvider from "@/contexts/active-session-context";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ThemeSwitch from "@/components/ThemeSwitch";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,20 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
+            <Toaster
+              toastOptions={{
+                duration: 5000,
+                position: "bottom-center",
+                style: {
+                  border: "1px solid #15803d",
+                  padding: "4px 8px",
+                  margin: "0px 0px 64px 0px",
+                  color: "#fff",
+                  background: "#15803d",
+                  fontWeight: 500,
+                },
+              }}
+            />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
