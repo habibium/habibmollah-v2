@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/contexts/active-session-context";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ThemeSwitch from "@/components/ThemeSwitch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
+            <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
