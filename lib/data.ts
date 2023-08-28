@@ -3,10 +3,12 @@ import { createElement } from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import tiktokFind from "@/public/tiktok-find.webp";
+import affling from "@/public/affling.webp";
+import gamepedia from "@/public/gamepedia.webp";
+import portfolioV2 from "@/public/porfolio-v2.webp";
+import moneymate from "@/public/moneymate.webp";
+import portfolioV1 from "@/public/portfolio-v1.webp";
 
 export const links = [
   {
@@ -37,25 +39,64 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "TikTok Find (freelance project)",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Single vendor e-commerce site with admin panel and user & admin authentication. Products can be added, updated, deleted with ease.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind", "Redux", "Firebase"],
+    imageUrl: tiktokFind,
+    sourceCode: "",
+    live: "",
+    demo: "https://youtu.be/_unb9NCeEaQ",
   },
   {
-    title: "rmtDev",
+    title: "Affling (ongoing freelance project)",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A social-media like website for a affiliate marketing stuff, where people can register a profile and show there services",
+    tags: ["Next.js", "TypeScript", "Zod", "...", "...", "..."],
+    imageUrl: affling,
+    sourceCode: "",
+    live: "",
+    demo: "",
   },
   {
-    title: "Word Analytics",
+    title: "GamePedia",
+    description:
+      "A multi-genre, multi-platform game discovery website with multi level filtering and sorting",
+    tags: ["TypeScript", "React", "Vite", "Chakra UI", "Framer"],
+    imageUrl: gamepedia,
+    sourceCode: "https://github.com/HabibMollah/gamepedia",
+    live: "https://gamepedia-pi.vercel.app/",
+    demo: "",
+  },
+  {
+    title: "This portfolio",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
+    imageUrl: portfolioV2,
+    sourceCode: "",
+    live: "",
+    demo: "",
+  },
+  {
+    title: "MoneyMate",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: moneymate,
+    sourceCode: "",
+    live: "",
+    demo: "",
+  },
+  {
+    title: "HTML CSS only Portfolio",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    imageUrl: portfolioV1,
+    sourceCode: "",
+    live: "",
+    demo: "",
   },
 ] as const;
 
