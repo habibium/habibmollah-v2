@@ -62,7 +62,7 @@ export const projectsData = [
     title: "GamePedia",
     description:
       "A multi-genre, multi-platform game discovery website with multi level filtering and sorting",
-    tags: ["TypeScript", "React", "Vite", "Chakra UI", "Framer"],
+    tags: ["TypeScript", "React", "Vite", "Chakra UI"],
     imageUrl: gamepedia,
     sourceCode: "https://github.com/HabibMollah/gamepedia",
     live: "https://gamepedia-pi.vercel.app/",
@@ -70,8 +70,7 @@ export const projectsData = [
   },
   {
     title: "This portfolio",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    description: "The website you're looking at right now.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
     imageUrl: portfolioV2,
     sourceCode: "",
@@ -81,8 +80,8 @@ export const projectsData = [
   {
     title: "MoneyMate",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A simple but powerful expense tracker app with the ability to filter items with specific category.",
+    tags: ["React", "Vite", "Daisy UI"],
     imageUrl: moneymate,
     sourceCode: "",
     live: "",
@@ -90,9 +89,8 @@ export const projectsData = [
   },
   {
     title: "HTML CSS only Portfolio",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    description: "My first porfolio made only with HTML and CSS.",
+    tags: ["HTML5", "CSS3"],
     imageUrl: portfolioV1,
     sourceCode: "",
     live: "",
