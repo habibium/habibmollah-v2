@@ -56,7 +56,7 @@ export default function Intro() {
 
         <a
           className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none duration-300 hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
-          href="/resume-habib-mollah.pdf"
+          href="/Habib-Resume.pdf"
           download
         >
           Download Resume{" "}
