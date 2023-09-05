@@ -35,10 +35,10 @@ export default function Project({ title, description, tags, imageUrl }: Props) {
             {description}
           </p>
           <ul className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
-            {tags.map((tag) => (
+            {tags.map((tag, index) => (
               <li
                 className="rounded-full bg-black/[0.7] px-3 py-1 text-[0.7rem] font-medium uppercase tracking-wider text-white dark:text-white/70"
-                key={tag}
+                key={index}
               >
                 {tag}
               </li>
