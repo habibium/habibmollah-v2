@@ -15,18 +15,16 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0"
+      className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0 lg:max-w-[70rem]"
     >
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-4xl font-extrabold !tracking-tighter sm:text-6xl md:text-8xl lg:text-9xl xl:text-[10rem]"
+        aria-label="Habib Mollah"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Habib Mollah</span> I'm a{" "}
-        <span className="font-bold">front-end engineer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>
+        <span>Habib </span>
+        <span>Mollah</span>
       </motion.h1>
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
