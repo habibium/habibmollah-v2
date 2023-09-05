@@ -18,13 +18,35 @@ export default function Intro() {
       className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0 lg:max-w-[70rem]"
     >
       <motion.h1
-        className="mb-10 mt-4 px-4 text-4xl font-extrabold !tracking-tighter sm:text-6xl md:text-8xl lg:text-9xl xl:text-[10rem]"
+        className="mb-10 mt-4 select-none py-14 text-4xl font-extrabold leading-none !tracking-tighter sm:text-6xl md:text-8xl lg:text-9xl xl:text-[10rem]"
         aria-label="Habib Mollah"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span>Habib </span>
-        <span>Mollah</span>
+        <span
+          data-content="Habibur"
+          className="before:animate-gradient-background-1 relative block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:text-center before:text-black before:content-[attr(data-content)]"
+        >
+          <span className="from-gradient-1-start to-gradient-1-end animate-gradient-foreground-1 block bg-gradient-to-r bg-clip-text text-transparent">
+            Habibur
+          </span>
+        </span>
+        <span
+          data-content="Rahman"
+          className="before:animate-gradient-background-2 relative block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:text-center before:text-black before:content-[attr(data-content)]"
+        >
+          <span className="from-gradient-2-start to-gradient-2-end animate-gradient-foreground-2 block bg-gradient-to-r bg-clip-text text-transparent">
+            Rahman
+          </span>
+        </span>
+        <span
+          data-content="Mollah"
+          className="before:animate-gradient-background-3 relative block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:text-center before:text-black before:content-[attr(data-content)]"
+        >
+          <span className="from-gradient-3-start to-gradient-3-end animate-gradient-foreground-3 block bg-gradient-to-r bg-clip-text text-transparent">
+            Mollah
+          </span>
+        </span>
       </motion.h1>
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
