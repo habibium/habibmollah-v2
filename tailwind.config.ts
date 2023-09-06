@@ -42,10 +42,10 @@ const config: Config = {
           "from, to": {
             opacity: "0",
           },
-          "33.333%, 83.333%": {
+          "33.333%, 76%": {
             opacity: "1",
           },
-          "16.667%, 66.667%": {
+          "16.667%, 96.667%": {
             opacity: "0",
           },
         },
@@ -53,29 +53,21 @@ const config: Config = {
           "from, to": {
             opacity: "1",
           },
-          "33.333%, 83.333%": {
+          "33.333%, 50%": {
             opacity: "0",
           },
-          "16.667%, 66.667%": {
+          "25%, 58.333%": {
             opacity: "1",
           },
         },
-        // "gradient-foreground-3": {
-        //   "from, 50%, to": {
-        //     opacity: "0",
-        //   },
-        //   "66.667%, 83.333%": {
-        //     opacity: "1",
-        //   },
-        // },
-        // "gradient-background-3": {
-        //   "from, 58.333%, 91.667%, to": {
-        //     opacity: "1",
-        //   },
-        //   "66.667%, 83.333%": {
-        //     opacity: "0",
-        //   },
-        // },
+        "gradient-foreground-3": {
+          "from, 50%, to": {
+            opacity: "0",
+          },
+          "66.667%, 83.333%": {
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "gradient-background-1": "gradient-background-1 8s infinite",
