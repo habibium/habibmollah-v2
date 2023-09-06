@@ -11,6 +11,7 @@ import { FaGithubSquare } from "react-icons/fa";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
     <section
       ref={ref}
@@ -24,29 +25,21 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span
-          data-content="Habibur"
-          className="relative block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:animate-gradient-background-1 before:text-center before:text-black before:content-[attr(data-content)]"
+          data-content="Habib"
+          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:inline-block before:w-full before:animate-gradient-background-1 before:text-center before:text-black before:content-[attr(data-content)]"
         >
-          <span className="block animate-gradient-foreground-1 bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text text-transparent">
-            Habibur
+          <span className="inline-block animate-gradient-foreground-1 bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text px-1 text-transparent">
+            Habib
           </span>
-        </span>
+        </span>{" "}
         <span
-          data-content="Rahman"
-          className="relative block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:animate-gradient-background-2 before:text-center before:text-black before:content-[attr(data-content)]"
-        >
-          <span className="block animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text text-transparent">
-            Rahman
-          </span>
-        </span>
-        {/* <span
           data-content="Mollah"
-          className="before:animate-gradient-background-3 relative block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:text-center before:text-black before:content-[attr(data-content)]"
+          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:inline-block before:w-full before:animate-gradient-background-2 before:text-center before:text-black before:content-[attr(data-content)]"
         >
-          <span className="from-gradient-3-start to-gradient-3-end animate-gradient-foreground-3 block bg-gradient-to-r bg-clip-text text-transparent">
+          <span className="inline-block animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text text-transparent">
             Mollah
           </span>
-        </span> */}
+        </span>
       </motion.h1>
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
