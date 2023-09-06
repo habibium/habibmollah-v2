@@ -16,10 +16,10 @@ const config: Config = {
       gradientColorStops: {
         "gradient-1-start": "#007CF0",
         "gradient-1-end": "#00DFD8",
-        "gradient-2-start": "#7928CA",
-        "gradient-2-end": "#FF0080",
-        "gradient-3-start": "#FF4D4D",
-        "gradient-3-end": "#F9CB28",
+        // "gradient-2-start": "#7928CA",
+        // "gradient-2-end": "#FF0080",
+        "gradient-2-start": "#FF4D4D",
+        "gradient-2-end": "#F9CB28",
       },
       keyframes: {
         "gradient-foreground-1": {
