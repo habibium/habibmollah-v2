@@ -1,0 +1,26 @@
+import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
+export default function HeroVideo() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  }, [inView]);
+  return (
+    <div ref={ref}>
+      <motion.video
+        ref={videoRef}
+        className="pointer-events-none mx-auto h-fit w-96 rounded-xl lg:w-[630px]"
+        muted
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <source src="/hero-section.mp4" type="video/mp4" />
+      </motion.video>
+    </div>
+  );
+}
