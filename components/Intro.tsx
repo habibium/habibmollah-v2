@@ -16,82 +16,117 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0 lg:max-w-[70rem]"
+      className="mb-28 flex max-w-[80rem] scroll-mt-[100rem] flex-col-reverse gap-8 text-center sm:mb-0 md:flex-row lg:max-w-[90rem]"
     >
-      <motion.h1
-        className="mb-10 mt-4 select-none py-14 text-4xl font-extrabold leading-none !tracking-tighter sm:text-6xl md:text-8xl lg:text-9xl xl:text-[10rem]"
-        aria-label="Habib Mollah"
+      <div>
+        <div className="mb-4">
+          <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            className=""
+          >
+            Hey! I'm
+          </motion.p>
+          <motion.h1
+            className="mx-auto select-none text-5xl font-extrabold leading-none !tracking-tighter sm:text-6xl md:text-8xl lg:text-9xl xl:text-[10rem]"
+            aria-label="Habib Mollah"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <span
+              data-content="Habib"
+              className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:inline-block before:w-full before:animate-gradient-background-1 before:text-center before:text-black before:content-[attr(data-content)] before:dark:text-white"
+            >
+              <span className="inline-block animate-gradient-foreground-1 bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text px-1 text-transparent">
+                Habib
+              </span>
+            </span>{" "}
+            <span
+              data-content="Mollah"
+              className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:inline-block before:w-full before:animate-gradient-background-2 before:text-center before:text-black before:content-[attr(data-content)] before:dark:text-white"
+            >
+              <span className="inline-block animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text text-transparent">
+                Mollah
+              </span>
+            </span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            className=""
+          >
+            A front-end engineer crafting imagination through code.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            className=""
+          >
+            Fun fact: I really really LOVE TypeScript and React.js
+          </motion.p>
+        </div>
+        <motion.div
+          className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            delay: 0.1,
+          }}
+        >
+          <div className="flex">
+            <Link
+              href="#contact"
+              className="group flex items-center gap-2 rounded-full bg-gray-900 px-2 py-1 text-xs text-white outline-none duration-300 hover:scale-110 focus:scale-110 active:scale-105 sm:px-7 sm:py-3"
+              onClick={() => {
+                setActiveSection("Contact");
+                setTimeOfLastClick(Date.now());
+              }}
+            >
+              Contact me here{" "}
+              <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
+            </Link>
+            <a
+              className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-2 py-1 text-xs outline-none duration-300 hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10 sm:px-7 sm:py-3"
+              href="/Habib-Resume.pdf"
+              download
+            >
+              Download Resume{" "}
+              <HiDownload className="opacity-60 transition group-hover:translate-x-1" />
+            </a>
+          </div>
+          <div className="flex">
+            <a
+              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 sm:p-4"
+              href="https://www.linkedin.com/in/habib-ibn-tofazzal/"
+              target="_blank"
+            >
+              <BsLinkedin />
+            </a>
+            <a
+              href="https://github.com/habibmollah"
+              target="_blank"
+              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 sm:p-4"
+            >
+              <FaGithubSquare />
+            </a>
+          </div>
+        </motion.div>
+      </div>
+      <motion.video
+        className="pointer-events-none mx-auto h-fit w-96 rounded-xl"
+        autoPlay
+        muted
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span
-          data-content="Habib"
-          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:inline-block before:w-full before:animate-gradient-background-1 before:text-center before:text-black before:content-[attr(data-content)] before:dark:text-white"
-        >
-          <span className="inline-block animate-gradient-foreground-1 bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text px-1 text-transparent">
-            Habib
-          </span>
-        </span>{" "}
-        <span
-          data-content="Mollah"
-          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:inline-block before:w-full before:animate-gradient-background-2 before:text-center before:text-black before:content-[attr(data-content)] before:dark:text-white"
-        >
-          <span className="inline-block animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text text-transparent">
-            Mollah
-          </span>
-        </span>
-      </motion.h1>
-      <motion.div
-        className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
-        initial={{
-          opacity: 0,
-          y: 100,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          delay: 0.1,
-        }}
-      >
-        <Link
-          href="#contact"
-          className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none duration-300 hover:scale-110 focus:scale-110 active:scale-105"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
-        >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
-        </Link>
-
-        <a
-          className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none duration-300 hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
-          href="/Habib-Resume.pdf"
-          download
-        >
-          Download Resume{" "}
-          <HiDownload className="opacity-60 transition group-hover:translate-x-1" />
-        </a>
-
-        <a
-          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/habib-ibn-tofazzal/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          href="https://github.com/habibmollah"
-          target="_blank"
-          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
-        >
-          <FaGithubSquare />
-        </a>
-      </motion.div>
+        <source src="/hero-section.mp4" type="video/mp4" />
+      </motion.video>
     </section>
   );
 }
