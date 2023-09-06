@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/contexts/active-session-context";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ThemeSwitch from "@/components/ThemeSwitch";
+// import ThemeSwitch from "@/components/ThemeSwitch";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -47,7 +47,7 @@ export default function RootLayout({
                 },
               }}
             />
-            <ThemeSwitch />
+            {/* <ThemeSwitch /> */}
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
