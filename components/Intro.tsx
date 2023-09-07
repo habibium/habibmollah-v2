@@ -51,7 +51,7 @@ export default function Intro() {
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className="ml-2 text-left text-lg"
+            className="ml-2 text-left text-lg font-extralight"
           >
             Hey! I'm
           </motion.p>
@@ -81,7 +81,7 @@ export default function Intro() {
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-left text-xl text-gray-600 dark:text-gray-300"
+            className="text-center text-xl text-gray-600 dark:text-gray-300"
           >
             A front-end engineer crafting imagination through{" "}
             <span
@@ -95,13 +95,13 @@ export default function Intro() {
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-left text-sm text-gray-400"
+            className="mt-16 text-center text-sm text-gray-400"
           >
             Fun fact: I really really LOVE TypeScript and React.js
           </motion.p>
         </div>
         <motion.div
-          className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
+          className="mt-2 flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
           initial={{
             opacity: 0,
             y: 100,
@@ -114,7 +114,7 @@ export default function Intro() {
             delay: 0.1,
           }}
         >
-          <div className="flex">
+          <div className="flex gap-2">
             <Link
               href="#contact"
               className="group flex items-center gap-2 rounded-full bg-gray-900 px-2 py-1 text-xs text-white outline-none duration-300 hover:scale-110 focus:scale-110 active:scale-105 sm:px-7 sm:py-3"
@@ -137,7 +137,7 @@ export default function Intro() {
           </div>
           <div className="flex">
             <a
-              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 sm:p-4"
+              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-1 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 sm:p-3"
               href="https://www.linkedin.com/in/habib-ibn-tofazzal/"
               target="_blank"
             >
@@ -146,7 +146,7 @@ export default function Intro() {
             <a
               href="https://github.com/habibmollah"
               target="_blank"
-              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 sm:p-4"
+              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-1 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 sm:p-3"
             >
               <FaGithubSquare />
             </a>
