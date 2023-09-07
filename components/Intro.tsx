@@ -144,6 +144,7 @@ export default function Intro() {
               className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-1 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 sm:p-3"
               href="https://www.linkedin.com/in/habib-ibn-tofazzal/"
               target="_blank"
+              title="Link to my LinkedIn"
             >
               <BsLinkedin />
             </a>
@@ -151,6 +152,7 @@ export default function Intro() {
               href="https://github.com/habibmollah"
               target="_blank"
               className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-1 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 sm:p-3"
+              title="Link to my GitHub"
             >
               <FaGithubSquare />
             </a>
