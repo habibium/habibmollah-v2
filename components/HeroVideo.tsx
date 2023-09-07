@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 export default function HeroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({ threshold: 1 });
 
   useEffect(() => {
     if (videoRef.current) {
