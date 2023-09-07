@@ -44,7 +44,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex max-w-[80rem] scroll-mt-[100rem] flex-col-reverse items-start gap-8 text-center lg:mt-32 lg:max-w-[90rem] lg:flex-row"
+      className="flex max-w-[80rem] scroll-mt-[100rem] flex-col-reverse items-start gap-2 text-center lg:mt-16 lg:max-w-[90rem] lg:flex-row"
     >
       <div className="mx-auto">
         <div className="mb-4">
