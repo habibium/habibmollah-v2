@@ -115,17 +115,21 @@ export default function Intro() {
           }}
         >
           <div className="flex gap-2">
-            <Link
-              href="#contact"
-              className="group flex items-center gap-2 rounded-full bg-gray-900 px-2 py-1 text-xs text-white outline-none duration-300 hover:scale-110 focus:scale-110 active:scale-105 sm:px-7 sm:py-3"
-              onClick={() => {
-                setActiveSection("Contact");
-                setTimeOfLastClick(Date.now());
-              }}
-            >
-              Contact me here{" "}
-              <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
-            </Link>
+            <div className="relative">
+              <span className="absolute -z-10 block h-10 w-full animate-gradient-foreground-1 rounded-full bg-gradient-to-r from-gradient-1-start to-gradient-1-end blur-md"></span>
+              <span className="absolute -z-10 block h-10 w-full animate-gradient-foreground-2 rounded-full bg-gradient-to-r from-gradient-2-start to-gradient-2-end blur-md"></span>
+              <Link
+                href="#contact"
+                className="group flex items-center gap-2 rounded-full bg-gray-900 px-2 py-1 text-xs text-white outline-none duration-300 hover:scale-110 sm:px-7 sm:py-3"
+                onClick={() => {
+                  setActiveSection("Contact");
+                  setTimeOfLastClick(Date.now());
+                }}
+              >
+                Contact me here{" "}
+                <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
+              </Link>
+            </div>
             <a
               className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-2 py-1 text-xs outline-none duration-300 hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10 sm:px-7 sm:py-3"
               href="/Habib-Resume.pdf"
@@ -135,7 +139,7 @@ export default function Intro() {
               <HiDownload className="opacity-60 transition group-hover:translate-x-1" />
             </a>
           </div>
-          <div className="flex">
+          <div className="flex gap-2">
             <a
               className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-1 text-gray-700 duration-300 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 sm:p-3"
               href="https://www.linkedin.com/in/habib-ibn-tofazzal/"
