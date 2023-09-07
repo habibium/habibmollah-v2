@@ -44,19 +44,19 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex max-w-[80rem] scroll-mt-[100rem] flex-col-reverse items-start gap-8 text-center md:mt-32 md:flex-row lg:max-w-[90rem]"
+      className="flex max-w-[80rem] scroll-mt-[100rem] flex-col-reverse items-start gap-8 text-center lg:mt-32 lg:max-w-[90rem] lg:flex-row"
     >
-      <div>
+      <div className="mx-auto">
         <div className="mb-4">
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className="ml-8 text-left text-lg font-extralight sm:ml-2"
+            className="ml-8 text-left text-lg font-extralight sm:ml-24"
           >
             Hey! I'm
           </motion.p>
           <motion.h1
-            className="mx-auto select-none text-5xl font-extrabold leading-none !tracking-tighter sm:text-6xl md:text-8xl lg:text-8xl"
+            className="mx-auto select-none text-5xl font-extrabold leading-none !tracking-tighter sm:text-6xl lg:text-8xl"
             aria-label="Habib Mollah"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
