@@ -14,7 +14,7 @@ export default function HeroVideo() {
     <div ref={ref}>
       <motion.video
         ref={videoRef}
-        className="pointer-events-none mx-auto h-fit w-96 rounded-xl lg:w-[630px]"
+        className="pointer-events-none mx-auto mr-0 h-fit w-[720px] max-w-[90%] rounded-xl"
         muted
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
