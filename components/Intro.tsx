@@ -51,7 +51,7 @@ export default function Intro() {
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className="ml-2 text-left text-lg font-extralight"
+            className="ml-8 text-left text-lg font-extralight sm:ml-2"
           >
             Hey! I'm
           </motion.p>
@@ -81,12 +81,12 @@ export default function Intro() {
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center text-xl text-gray-600 dark:text-gray-300"
+            className="text-center text-gray-600 dark:text-gray-300 sm:text-xl"
           >
             A front-end engineer crafting imagination through{" "}
             <span
               ref={codeRef}
-              className="bg-black px-1 py-[1px] font-mono text-green-400"
+              className="bg-black px-1 py-[2px] font-mono font-medium text-[#00FF41]"
             >
               code
             </span>
@@ -116,8 +116,8 @@ export default function Intro() {
         >
           <div className="flex gap-2">
             <div className="group relative">
-              <span className="absolute -z-10 block h-10 w-full animate-gradient-foreground-1 rounded-full bg-gradient-to-r from-gradient-1-start to-gradient-1-end blur-md duration-300 group-hover:blur-xl"></span>
-              <span className="absolute -z-10 block h-10 w-full animate-gradient-foreground-2 rounded-full bg-gradient-to-r from-gradient-2-start to-gradient-2-end blur-md duration-300 group-hover:blur-xl"></span>
+              <span className="absolute -z-10 block h-6 w-full animate-gradient-foreground-1 rounded-full bg-gradient-to-r from-gradient-1-start to-gradient-1-end blur-md duration-300 group-hover:blur-xl sm:h-10"></span>
+              <span className="absolute -z-10 block h-6 w-full animate-gradient-foreground-2 rounded-full bg-gradient-to-r from-gradient-2-start to-gradient-2-end blur-md duration-300 group-hover:blur-xl sm:h-10"></span>
               <Link
                 href="#contact"
                 className="group flex items-center gap-2 rounded-full bg-gray-900 px-2 py-1 text-xs text-white outline-none duration-300 sm:px-7 sm:py-3"
