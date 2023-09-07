@@ -15,12 +15,14 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const codeRef = useRef<HTMLSpanElement>(null);
 
+  // Hacker Effect
   useEffect(() => {
     const letters = "abcdefghijklmnopqrstuvwxyz";
-
-    const interval = setInterval(() => {
+    // Run the hacker effect every 2 seconds
+    const intervalOne = setInterval(() => {
       let iterations = 0;
-      const interval = setInterval(() => {
+      // Change each character every 0.1 seconds
+      const intervalTwo = setInterval(() => {
         if (codeRef.current) {
           codeRef.current.innerText = codeRef.current.innerText
             .split("")
@@ -29,13 +31,13 @@ export default function Intro() {
               return letters[Math.floor(Math.random() * 26)];
             })
             .join("");
-          if (iterations >= 4) clearInterval(interval);
+          if (iterations >= 4) clearInterval(intervalTwo);
           iterations++;
         }
       }, 100);
     }, 2000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(intervalOne);
   }, []);
 
   return (
