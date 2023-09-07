@@ -7,6 +7,7 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import HeroVideo from "./HeroVideo";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -16,19 +17,19 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 flex max-w-[80rem] scroll-mt-[100rem] flex-col-reverse gap-8 text-center sm:mb-0 md:flex-row lg:max-w-[90rem]"
+      className="flex max-w-[80rem] scroll-mt-[100rem] flex-col-reverse items-center gap-8 text-center md:flex-row lg:max-w-[90rem]"
     >
       <div>
         <div className="mb-4">
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className=""
+            className="ml-2 text-left"
           >
             Hey! I'm
           </motion.p>
           <motion.h1
-            className="mx-auto select-none text-5xl font-extrabold leading-none !tracking-tighter sm:text-6xl md:text-8xl lg:text-9xl xl:text-[10rem]"
+            className="mx-auto select-none text-5xl font-extrabold leading-none !tracking-tighter sm:text-6xl md:text-8xl lg:text-8xl"
             aria-label="Habib Mollah"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,7 +56,11 @@ export default function Intro() {
             animate={{ opacity: 1, y: 0 }}
             className=""
           >
-            A front-end engineer crafting imagination through code.
+            A front-end engineer crafting imagination through{" "}
+            <span className="bg-black px-1 py-[1px] font-mono text-green-400">
+              code
+            </span>
+            .
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 100 }}
@@ -118,15 +123,7 @@ export default function Intro() {
           </div>
         </motion.div>
       </div>
-      <motion.video
-        className="pointer-events-none mx-auto h-fit w-96 rounded-xl"
-        autoPlay
-        muted
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <source src="/hero-section.mp4" type="video/mp4" />
-      </motion.video>
+      <HeroVideo />
     </section>
   );
 }
