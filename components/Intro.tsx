@@ -8,10 +8,35 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import HeroVideo from "./HeroVideo";
+import { useEffect, useRef } from "react";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const codeRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const letters = "abcdefghijklmnopqrstuvwxyz";
+
+    const interval = setInterval(() => {
+      let iterations = 0;
+      const interval = setInterval(() => {
+        if (codeRef.current) {
+          codeRef.current.innerText = codeRef.current.innerText
+            .split("")
+            .map((letter, index) => {
+              if (index < iterations) return "code"[index];
+              return letters[Math.floor(Math.random() * 26)];
+            })
+            .join("");
+          if (iterations >= 4) clearInterval(interval);
+          iterations++;
+        }
+      }, 100);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section
@@ -57,7 +82,10 @@ export default function Intro() {
             className=""
           >
             A front-end engineer crafting imagination through{" "}
-            <span className="bg-black px-1 py-[1px] font-mono text-green-400">
+            <span
+              ref={codeRef}
+              className="bg-black px-1 py-[1px] font-mono text-green-400"
+            >
               code
             </span>
             .
