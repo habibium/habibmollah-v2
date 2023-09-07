@@ -115,12 +115,12 @@ export default function Intro() {
           }}
         >
           <div className="flex gap-2">
-            <div className="relative">
-              <span className="absolute -z-10 block h-10 w-full animate-gradient-foreground-1 rounded-full bg-gradient-to-r from-gradient-1-start to-gradient-1-end blur-md"></span>
-              <span className="absolute -z-10 block h-10 w-full animate-gradient-foreground-2 rounded-full bg-gradient-to-r from-gradient-2-start to-gradient-2-end blur-md"></span>
+            <div className="group relative">
+              <span className="absolute -z-10 block h-10 w-full animate-gradient-foreground-1 rounded-full bg-gradient-to-r from-gradient-1-start to-gradient-1-end blur-md duration-300 group-hover:blur-xl"></span>
+              <span className="absolute -z-10 block h-10 w-full animate-gradient-foreground-2 rounded-full bg-gradient-to-r from-gradient-2-start to-gradient-2-end blur-md duration-300 group-hover:blur-xl"></span>
               <Link
                 href="#contact"
-                className="group flex items-center gap-2 rounded-full bg-gray-900 px-2 py-1 text-xs text-white outline-none duration-300 hover:scale-110 sm:px-7 sm:py-3"
+                className="group flex items-center gap-2 rounded-full bg-gray-900 px-2 py-1 text-xs text-white outline-none duration-300 sm:px-7 sm:py-3"
                 onClick={() => {
                   setActiveSection("Contact");
                   setTimeOfLastClick(Date.now());
