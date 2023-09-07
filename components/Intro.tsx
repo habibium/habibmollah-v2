@@ -44,14 +44,14 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex max-w-[80rem] scroll-mt-[100rem] flex-col-reverse items-center gap-8 text-center md:flex-row lg:max-w-[90rem]"
+      className="mt-32 flex max-w-[80rem] scroll-mt-[100rem] flex-col-reverse items-start gap-8 text-center md:flex-row lg:max-w-[90rem]"
     >
       <div>
         <div className="mb-4">
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className="ml-2 text-left"
+            className="ml-2 text-left text-lg"
           >
             Hey! I'm
           </motion.p>
@@ -81,7 +81,7 @@ export default function Intro() {
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className=""
+            className="text-left text-xl text-gray-600 dark:text-gray-300"
           >
             A front-end engineer crafting imagination through{" "}
             <span
@@ -95,7 +95,7 @@ export default function Intro() {
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className=""
+            className="text-left text-sm text-gray-400"
           >
             Fun fact: I really really LOVE TypeScript and React.js
           </motion.p>
