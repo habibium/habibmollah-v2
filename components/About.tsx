@@ -61,9 +61,9 @@ export default function About() {
               target="_blank"
               className="inline-block !text-[#139cc8] underline underline-offset-4"
             >
-              <div className="flex items-center font-medium">
+              <span className="flex items-center font-medium">
                 <TbBrandReact /> React
-              </div>
+              </span>
             </a>{" "}
             documentation into Bengali.
             <span className="font-bold italic"></span>
