@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import useSectionInView from "@/lib/hooks";
 import Image from "next/image";
+import { TbBrandReact } from "react-icons/tb";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -33,9 +34,13 @@ export default function About() {
         </figure>
         <div className="text-center sm:text-xl">
           <p>
-            I'm an experienced front-end developer and{" "}
-            <span className="bg-blue-400 px-1 font-medium text-white dark:bg-blue-500">
-              TypeScript
+            I'm an experienced front-end developer,{" "}
+            <span className="bg-[#efd81bbb] px-1 font-bold text-black dark:bg-blue-500">
+              JavaScript
+            </span>{" "}
+            programmer and{" "}
+            <span className="bg-blue-500/60 px-1 font-bold text-white">
+              open source software
             </span>{" "}
             enthusiast.
           </p>
@@ -48,6 +53,20 @@ export default function About() {
             <span className="bg-pink-200 px-1 font-bold dark:bg-pink-500">
               design, functionality, accessibility, and user experience.
             </span>
+          </p>
+          <p>
+            I'm currently contributing to the translation of the official
+            <a
+              href="https://bn-react-dev.vercel.app/"
+              target="_blank"
+              className="inline-block !text-[#139cc8] underline underline-offset-4"
+            >
+              <div className="flex items-center font-medium">
+                <TbBrandReact /> React
+              </div>
+            </a>{" "}
+            documentation into Bengali.
+            <span className="font-bold italic"></span>
           </p>
         </div>
       </div>
