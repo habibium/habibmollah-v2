@@ -35,7 +35,7 @@ export default function About() {
         <div className="text-center sm:text-xl">
           <p>
             I'm an experienced front-end developer,{" "}
-            <span className="bg-[#efd81bbb] px-1 font-bold text-black dark:bg-blue-500">
+            <span className="bg-[#efd81bbb] px-1 font-bold text-black dark:bg-[#efd81b]">
               JavaScript
             </span>{" "}
             programmer and{" "}
