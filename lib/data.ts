@@ -143,27 +143,43 @@ export const skillsData = [
 
 export const experiencesData = [
   {
-    title: "Responsive Web Design Certification",
+    title: "Front-End Development Libraries Certification",
     location: "freeCodeCamp.org",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Through this course I learned to use popular front-end libraries which boost development speed like: Bootstrap, SASS, jQuery and Redux and mastered React.js. To achieve the certification, I had to submit 5 projects built with React: 1) Random quote machine, 2) Drum machine, 3) Markdown previewer, 4) Calculator, 5) Pomodoro (25 + 5) clock. These projects honed my React skills and taught me how to use it as a sword for creating interactive UI.",
     icon: createElement(LuGraduationCap),
-    date: "2019",
+    date: "2021 - present",
+  },
+  {
+    title: "React (Beginner to Advanced) and its Ecosystem",
+    location: "codewithmosh.com",
+    description:
+      "Through this course I got familiar with popular front-end libraries like: Bootstrap, SASS, jQuery and Redux and mastered React.js. To achieve the certification I had to submit 5 projects built with React: 1) Random quote machine, 2) Drum machine, 3) Markdown previewer, 4) Calculator, 5) Pomodoro (25 + 5) clock. These projects honed my React skills and taught me how to use it as a sword for creating interactive UI.",
+    icon: createElement(LuGraduationCap),
+    date: "2021 - present",
+  },
+  {
+    title: "TypeScript (Beginner to Advanced)",
+    location: "codewithmosh.com",
+    description:
+      "JavaScript has a lot of limitations. It is a dynamically typed language. Because of the lack of a type system it behaves unexpectedly often. TypeScript is a superset of JavaScript that was made to overcome the limitations of JavaScript. I learned almost all the nitty gritty stuff about TypeScript in this course.",
+    icon: createElement(LuGraduationCap),
+    date: "2021 - present",
   },
   {
     title: "JavaScript Algorithms and Data Structures Certification",
     location: "freeCodeCamp.org",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I entered the world of programming with JavaScript. Along this course I learned the basic to advanced topics of a programming language particularly in JavaScript and solved many many problems, scripted many advance algorithms.",
     icon: createElement(LuGraduationCap),
     date: "2019 - 2021",
   },
   {
-    title: "Front-End Development Libraries Certification",
+    title: "Responsive Web Design Certification",
     location: "freeCodeCamp.org",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I gained a strong foundation of web development by learning the building blocks of the web HTML5 and CSS3 including semantic HTML elements, HTML Best Practices for SEO, CSS animations, media queries, box-model, flex, grid etc.",
     icon: createElement(LuGraduationCap),
-    date: "2021 - present",
+    date: "2019",
   },
 ] as const;
