@@ -20,6 +20,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import tiktokFind from "@/public/tiktok-find.webp";
 import affling from "@/public/affling.webp";
 import gamepedia from "@/public/gamepedia.webp";
+import calculator from "@/public/calculator-full.webp";
 import portfolioV2 from "@/public/porfolio-v2.webp";
 import moneymate from "@/public/moneymate.webp";
 import portfolioV1 from "@/public/portfolio-v1.webp";
@@ -80,6 +81,16 @@ export const projectsData = [
     imageUrl: gamepedia,
     sourceCode: "https://github.com/HabibMollah/gamepedia",
     live: "https://gamepedia-pi.vercel.app/",
+    demo: "",
+  },
+  {
+    title: "React Calculator",
+    description:
+      "A calculator made with React that can do all arithmetic calculations",
+    tags: ["React", "TypeScript", "Vite"],
+    imageUrl: calculator,
+    sourceCode: "",
+    live: "",
     demo: "",
   },
   {
