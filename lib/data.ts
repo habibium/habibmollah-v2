@@ -22,7 +22,7 @@ import affling from "@/public/affling.webp";
 import gamepedia from "@/public/gamepedia.webp";
 import calculator from "@/public/calculator-full.webp";
 import portfolioV2 from "@/public/porfolio-v2.webp";
-import moneymate from "@/public/moneymate.webp";
+import moneymate from "@/public/moneymate-phone.webp";
 import portfolioV1 from "@/public/portfolio-v1.webp";
 
 export const links = [
