@@ -76,7 +76,7 @@ export const projectsData = [
   {
     title: "GamePedia",
     description:
-      "A multi-genre, multi-platform game discovery website with multi level filtering and sorting",
+      "A multi-genre, multi-platform game discovery website with powerful search, multi level filtering and sorting",
     tags: ["TypeScript", "React", "Vite", "Chakra UI"],
     imageUrl: gamepedia,
     sourceCode: "https://github.com/HabibMollah/gamepedia",
