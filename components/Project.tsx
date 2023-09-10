@@ -49,6 +49,7 @@ export default function Project({ title, description, tags, imageUrl }: Props) {
           src={imageUrl}
           alt="Project image"
           quality={95}
+          loading="lazy"
           className="absolute -right-40 top-8 hidden w-[28.25rem] rounded-t-lg shadow-2xl transition duration-700 
           
           group-even:-left-40 
