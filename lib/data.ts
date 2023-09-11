@@ -24,6 +24,7 @@ import calculator from "@/public/calculator-full.webp";
 import portfolioV2 from "@/public/porfolio-v2.webp";
 import moneymate from "@/public/moneymate-phone.webp";
 import portfolioV1 from "@/public/portfolio-v1.webp";
+import drumMachine from "@/public/drum-machine.webp";
 
 export const links = [
   {
@@ -108,6 +109,15 @@ export const projectsData = [
       "A simple but powerful expense tracker app with the ability to filter items with specific category.",
     tags: ["React", "Vite", "Daisy UI"],
     imageUrl: moneymate,
+    sourceCode: "",
+    live: "",
+    demo: "",
+  },
+  {
+    title: "Drum Machine",
+    description: "A drum machine made with React 17",
+    tags: ["React", "Vite"],
+    imageUrl: drumMachine,
     sourceCode: "",
     live: "",
     demo: "",
