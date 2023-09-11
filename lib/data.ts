@@ -151,10 +151,10 @@ export const experiencesData = [
     date: "2021 - present",
   },
   {
-    title: "React (Beginner to Advanced) and its Ecosystem",
+    title: "Advanced React and its Ecosystem",
     location: "codewithmosh.com",
     description:
-      "Through this course I got familiar with popular front-end libraries like: Bootstrap, SASS, jQuery and Redux and mastered React.js. To achieve the certification I had to submit 5 projects built with React: 1) Random quote machine, 2) Drum machine, 3) Markdown previewer, 4) Calculator, 5) Pomodoro (25 + 5) clock. These projects honed my React skills and taught me how to use it as a sword for creating interactive UI.",
+      "I dived into React's giant ecosystem with many ways to handle routing, caching, data fetching, testing, animations, state management and so on.",
     icon: createElement(LuGraduationCap),
     date: "2021 - present",
   },
