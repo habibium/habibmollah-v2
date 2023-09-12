@@ -26,6 +26,7 @@ import portfolioV1 from "@/public/portfolio-v1.webp";
 import drumMachine from "@/public/drum-machine.webp";
 import pomodoro from "@/public/pomodoro.webp";
 import markdown from "@/public/mdpreviewer.png";
+import quoteGenerator from "@/public/quote-generator.webp";
 
 export const links = [
   {
@@ -139,6 +140,15 @@ export const projectsData = [
     description: "A drum machine made with React 17",
     tags: ["React", "Vite"],
     imageUrl: drumMachine,
+    sourceCode: "",
+    live: "",
+    demo: "",
+  },
+  {
+    title: "Quote Generator",
+    description: "A beautiful quote generator made with React 17",
+    tags: ["React", "Vite"],
+    imageUrl: quoteGenerator,
     sourceCode: "",
     live: "",
     demo: "",
