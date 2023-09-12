@@ -25,6 +25,7 @@ import portfolioV2 from "@/public/porfolio-v2.webp";
 import moneymate from "@/public/moneymate-phone.webp";
 import portfolioV1 from "@/public/portfolio-v1.webp";
 import drumMachine from "@/public/drum-machine.webp";
+import pomodoro from "@/public/pomodoro.webp";
 
 export const links = [
   {
@@ -118,6 +119,16 @@ export const projectsData = [
     description: "A drum machine made with React 17",
     tags: ["React", "Vite"],
     imageUrl: drumMachine,
+    sourceCode: "",
+    live: "",
+    demo: "",
+  },
+  {
+    title: "Pomodoro",
+    description:
+      "A clock where you can set a timer for your work and for break. After you timer ends you will get notified and break timer will start. After the break ends your work timer will start. This will go on until you stop the timer or reset it.",
+    tags: ["React", "Vite"],
+    imageUrl: pomodoro,
     sourceCode: "",
     live: "",
     demo: "",
