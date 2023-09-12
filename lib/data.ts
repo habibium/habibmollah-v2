@@ -27,6 +27,8 @@ import drumMachine from "@/public/drum-machine.webp";
 import pomodoro from "@/public/pomodoro.webp";
 import markdown from "@/public/mdpreviewer.png";
 import quoteGenerator from "@/public/quote-generator.webp";
+import ticTacToe from "@/public/tictactoe.png";
+import rockPaperScissors from "@/public/rockpaperscissors.png";
 
 export const links = [
   {
@@ -149,6 +151,24 @@ export const projectsData = [
     description: "A beautiful quote generator made with React 17",
     tags: ["React", "Vite"],
     imageUrl: quoteGenerator,
+    sourceCode: "",
+    live: "",
+    demo: "",
+  },
+  {
+    title: "React Tic-Tac-Toe",
+    description: "The classic tic-tac-toe game.",
+    tags: ["React", "Vite"],
+    imageUrl: ticTacToe,
+    sourceCode: "",
+    live: "",
+    demo: "",
+  },
+  {
+    title: "React Rock Paper Scissors",
+    description: "Play rock paper scissors with robot",
+    tags: ["React", "Vite"],
+    imageUrl: rockPaperScissors,
     sourceCode: "",
     live: "",
     demo: "",
