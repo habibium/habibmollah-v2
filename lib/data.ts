@@ -25,6 +25,7 @@ import moneymate from "@/public/moneymate-phone.webp";
 import portfolioV1 from "@/public/portfolio-v1.webp";
 import drumMachine from "@/public/drum-machine.webp";
 import pomodoro from "@/public/pomodoro.webp";
+import markdown from "@/public/mdpreviewer.png";
 
 export const links = [
   {
@@ -85,20 +86,40 @@ export const projectsData = [
     demo: "",
   },
   {
-    title: "React Calculator",
-    description:
-      "A calculator made with React that can do all arithmetic calculations",
-    tags: ["React", "TypeScript", "Vite"],
-    imageUrl: calculator,
+    title: "This portfolio",
+    description: "The website you're looking at right now.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
+    imageUrl: portfolioV2,
     sourceCode: "",
     live: "",
     demo: "",
   },
   {
-    title: "This portfolio",
-    description: "The website you're looking at right now.",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
-    imageUrl: portfolioV2,
+    title: "Markdown Previewer",
+    description:
+      "Write in Markdown syntax and see the result in real time in GitHub style.",
+    tags: ["React", "MDX", "Vite"],
+    imageUrl: markdown,
+    sourceCode: "",
+    live: "",
+    demo: "",
+  },
+  {
+    title: "Pomodoro",
+    description:
+      "A clock where you can set a timer for your work and for break. After you timer ends you will get notified and break timer will start. After the break ends your work timer will start. This will go on until you stop the timer or reset it.",
+    tags: ["React", "Vite"],
+    imageUrl: pomodoro,
+    sourceCode: "",
+    live: "",
+    demo: "",
+  },
+  {
+    title: "React Calculator",
+    description:
+      "A calculator made with React that can do all arithmetic calculations",
+    tags: ["React", "TypeScript", "Vite"],
+    imageUrl: calculator,
     sourceCode: "",
     live: "",
     demo: "",
@@ -118,16 +139,6 @@ export const projectsData = [
     description: "A drum machine made with React 17",
     tags: ["React", "Vite"],
     imageUrl: drumMachine,
-    sourceCode: "",
-    live: "",
-    demo: "",
-  },
-  {
-    title: "Pomodoro",
-    description:
-      "A clock where you can set a timer for your work and for break. After you timer ends you will get notified and break timer will start. After the break ends your work timer will start. This will go on until you stop the timer or reset it.",
-    tags: ["React", "Vite"],
-    imageUrl: pomodoro,
     sourceCode: "",
     live: "",
     demo: "",
