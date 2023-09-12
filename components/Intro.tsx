@@ -26,8 +26,7 @@ export default function Intro() {
         if (codeRef.current) {
           codeRef.current.innerText = codeRef.current.innerText
             .split("")
-            .map((letter, index) => {
-              console.log(letter);
+            .map((_letter, index) => {
               if (index < iterations) return "code"[index];
               return letters[Math.floor(Math.random() * 26)];
             })
