@@ -14,8 +14,7 @@ import {
   TbMarkdown,
 } from "react-icons/tb";
 import { SiMui, SiNextdotjs } from "react-icons/si";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact, FaSass } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import tiktokFind from "@/public/tiktok-find.webp";
 import affling from "@/public/affling.webp";
