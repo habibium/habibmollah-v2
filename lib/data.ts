@@ -101,7 +101,7 @@ export const projectsData = [
     title: "Markdown Previewer",
     description:
       "Write in Markdown syntax and see the result in real time in GitHub style.",
-    tags: ["React", "MDX", "Vite"],
+    tags: ["React", "TypeScript", "MDX", "Vite"],
     imageUrl: markdown,
     sourceCode: "",
     live: "",
@@ -110,8 +110,8 @@ export const projectsData = [
   {
     title: "Pomodoro",
     description:
-      "A clock where you can set a timer for your work and for break. After you timer ends you will get notified and break timer will start. After the break ends your work timer will start. This will go on until you stop the timer or reset it.",
-    tags: ["React", "Vite"],
+      "Set a timer. Focus on you task meanwhile. Get notified when the time ends. Take a short break. Repeat.",
+    tags: ["React", "TypeScript", "Vite"],
     imageUrl: pomodoro,
     sourceCode: "",
     live: "",
@@ -131,7 +131,7 @@ export const projectsData = [
     title: "MoneyMate",
     description:
       "A simple but powerful expense tracker app with the ability to filter items with specific category.",
-    tags: ["React", "Vite", "Daisy UI"],
+    tags: ["React", "TypeScript", "Vite", "Daisy UI"],
     imageUrl: moneymate,
     sourceCode: "",
     live: "",
@@ -140,7 +140,7 @@ export const projectsData = [
   {
     title: "Drum Machine",
     description: "A drum machine made with React 17",
-    tags: ["React", "Vite"],
+    tags: ["React", "TypeScript", "Vite"],
     imageUrl: drumMachine,
     sourceCode: "",
     live: "",
@@ -149,7 +149,7 @@ export const projectsData = [
   {
     title: "Quote Generator",
     description: "A beautiful quote generator made with React 17",
-    tags: ["React", "Vite"],
+    tags: ["React", "TypeScript", "Vite"],
     imageUrl: quoteGenerator,
     sourceCode: "",
     live: "",
@@ -158,7 +158,7 @@ export const projectsData = [
   {
     title: "React Tic-Tac-Toe",
     description: "The classic tic-tac-toe game.",
-    tags: ["React", "Vite"],
+    tags: ["React", "TypeScript", "Vite"],
     imageUrl: ticTacToe,
     sourceCode: "",
     live: "",
@@ -167,7 +167,7 @@ export const projectsData = [
   {
     title: "React Rock Paper Scissors",
     description: "Play rock paper scissors with robot",
-    tags: ["React", "Vite"],
+    tags: ["React", "TypeScript", "Vite"],
     imageUrl: rockPaperScissors,
     sourceCode: "",
     live: "",
