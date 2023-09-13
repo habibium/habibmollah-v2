@@ -40,6 +40,16 @@ export default function Project({
     >
       <section className="relative max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 transition hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:h-[20rem] sm:pr-8 sm:group-even:pl-8">
         <div className="flex h-full flex-col gap-3 px-5 py-7 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:group-even:ml-[18rem]">
+          <div>
+            <Image
+              alt="Project image"
+              src={imageUrl}
+              // width={500}
+              // height={500}
+              loading="lazy"
+              className="h-[240px] w-full object-cover object-top sm:hidden"
+            />
+          </div>
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="leading-relaxed text-gray-700 dark:text-white/70">
             {description}
