@@ -49,7 +49,7 @@ export default function Project({
               <a
                 href={live}
                 target="_blank"
-                className="flex items-center gap-1 rounded-lg bg-red-300 px-2 text-black dark:bg-red-300"
+                className="flex items-center gap-1 rounded-lg bg-red-300 px-2 text-black"
               >
                 <HiOutlineExternalLink />
                 Live
@@ -60,8 +60,8 @@ export default function Project({
                 href={sourceCode}
                 target="_blank"
                 className={`flex ${
-                  sourceCode ? "" : "cursor-not-allowed"
-                } items-center gap-1 rounded-lg bg-[#161b22] px-2 text-white dark:bg-red-300`}
+                  sourceCode ? "" : "cursor-not-allowed opacity-50"
+                } items-center gap-1 rounded-lg bg-[#161b22] px-2 text-white`}
               >
                 <FaGithub />
                 {sourceCode ? "Code" : "Private"}
@@ -71,7 +71,7 @@ export default function Project({
               <a
                 href={demo}
                 target="_blank"
-                className="flex items-center gap-1 rounded-lg bg-[#ff0000] px-2 text-white dark:bg-red-300"
+                className="flex items-center gap-1 rounded-lg bg-[#ff0000] px-2 text-white"
               >
                 <FaYoutube />
                 Video
