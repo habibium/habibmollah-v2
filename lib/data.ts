@@ -15,6 +15,7 @@ import {
 } from "react-icons/tb";
 import { SiMui, SiNextdotjs } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
+import { MdWorkOutline } from "react-icons/md";
 import { LuGraduationCap } from "react-icons/lu";
 import tiktokFind from "@/public/tiktok-find.webp";
 import affling from "@/public/affling.webp";
@@ -203,6 +204,14 @@ export const skillsData = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Collaborating On Freelance Projects",
+    location: "Upwork, Fiverr",
+    description:
+      "Currently I am collaborating with my friends as a front-end developer on projects from Upwork and Fiverr. My stack is React, TypeScript, Next.js.",
+    icon: createElement(MdWorkOutline),
+    date: "2021 - present",
+  },
   {
     title: "Front-End Development Libraries Certification",
     location: "freeCodeCamp.org",
