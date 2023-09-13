@@ -12,7 +12,7 @@ import { useThemeContext } from "@/contexts/theme-context";
 import SectionHeading from "./SectionHeading";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.3);
   const { theme } = useThemeContext();
 
   return (
