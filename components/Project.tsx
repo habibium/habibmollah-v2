@@ -65,7 +65,7 @@ export default function Project({
             )}
             {
               <a
-                href={sourceCode}
+                href={sourceCode ? sourceCode : "#"}
                 target="_blank"
                 className={`flex ${
                   sourceCode ? "" : "cursor-not-allowed opacity-50"
