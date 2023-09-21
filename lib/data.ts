@@ -206,10 +206,10 @@ export const skillsData = [
 
 export const experiencesData = [
   {
-    title: "Collaborating On Freelance Projects",
-    location: "Upwork, Fiverr",
+    title: "Front End Engineer",
+    location: "ImernTech",
     description:
-      "Currently I am collaborating with my friends as a front-end developer on projects from Upwork and Fiverr. My stack is React, TypeScript, Next.js.",
+      "I am working part-time as a front-end engineer within this organization. My stack is React, TypeScript, Next.js.",
     icon: createElement(MdWorkOutline),
     date: "2021 - present",
   },
