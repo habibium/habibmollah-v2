@@ -132,7 +132,7 @@ export default function Intro() {
             </div>
             <a
               className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-2 py-1 text-xs outline-none duration-300 hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10 sm:px-7 sm:py-3"
-              href="/Habib-Resume.pdf"
+              href="/resume-of-habib-mollah-standard.pdf"
               download
             >
               Download Resume{" "}
