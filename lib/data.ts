@@ -20,6 +20,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import tiktokFind from "@/public/tiktok-find.webp";
 import affling from "@/public/affling.webp";
 import gamepedia from "@/public/gamepedia.webp";
+import qwikit from "@/public/qwikit.png";
 import calculator from "@/public/calculator-full.webp";
 import portfolioV2 from "@/public/porfolio-v2.webp";
 import moneymate from "@/public/moneymate-phone.webp";
@@ -70,13 +71,13 @@ export const projectsData = [
     demo: "https://youtu.be/_unb9NCeEaQ",
   },
   {
-    title: "Affling (ongoing freelance project)",
+    title: "MySQL+ERN CRUD",
     description:
-      "A social-media like website for a affiliate marketing stuff, where people can register a profile and show there services",
-    tags: ["Next.js", "TypeScript", "Zod", "...", "...", "..."],
-    imageUrl: affling,
-    sourceCode: "",
-    live: "https://affling.vercel.app/",
+      "A full stack app I built all by myself in a weekend using MySQL, Express.js and Next.js 13 with server components.",
+    tags: ["MySQL", "Express.js", "Next.js", "Server Components"],
+    imageUrl: qwikit,
+    sourceCode: "https://github.com/HabibMollah/qwikit-groceries",
+    live: "https://qwikit-groceries-frontend.vercel.app/",
     demo: "",
   },
   {
@@ -87,6 +88,16 @@ export const projectsData = [
     imageUrl: gamepedia,
     sourceCode: "https://github.com/HabibMollah/gamepedia",
     live: "https://gamepedia-pi.vercel.app/",
+    demo: "",
+  },
+  {
+    title: "Affling (freelance project)",
+    description:
+      "A social-media like website for a affiliate marketing stuff, where people can register a profile and show there services",
+    tags: ["Next.js", "TypeScript", "Zod", "...", "...", "..."],
+    imageUrl: affling,
+    sourceCode: "",
+    live: "https://affling.vercel.app/",
     demo: "",
   },
   {
