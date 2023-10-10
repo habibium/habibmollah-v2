@@ -12,7 +12,28 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Habib Mollah",
-  description: "Habib Mollah is a professional front end engineer",
+  description:
+    "Habib Mollah is a professional front end web developer and fullstack engineer specialized in javascript, typescript, react and next.js",
+  icons: {
+    icon: "./favicon.ico",
+  },
+  keywords: [
+    "web developer",
+    "web development",
+    "frontend",
+    "front end",
+    "front-end",
+    "full stack",
+    "react",
+    "react.js",
+    "javascript",
+    "typescript",
+    "next.js",
+    "programming",
+  ],
+  authors: [{ name: "Habib Mollah", url: "https://mollah.vercel.app" }],
+  creator: "Habib Mollah",
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
