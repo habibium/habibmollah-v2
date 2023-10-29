@@ -83,7 +83,7 @@ export default function Intro() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center text-gray-600 dark:text-gray-300 sm:text-xl"
           >
-            A front-end engineer crafting imagination through{" "}
+            A frontend developer crafting imagination through{" "}
             <span
               ref={codeRef}
               className="bg-black px-1 py-[2px] font-mono font-medium text-[#00FF41]"
