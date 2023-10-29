@@ -34,7 +34,7 @@ export default function About() {
         </figure>
         <div className="text-center sm:text-xl">
           <p>
-            I'm an experienced front-end developer,{" "}
+            I'm an experienced frontend developer,{" "}
             <span className="bg-[#efd81bbb] px-1 font-bold text-black dark:bg-[#efd81b]">
               JavaScript
             </span>{" "}
@@ -55,7 +55,7 @@ export default function About() {
             </span>
           </p>
           <p>
-            I'm currently contributing to the translation of the official
+            I'm also actively contributing to the translation of the official
             <a
               href="https://bn-react-dev.vercel.app/"
               target="_blank"
