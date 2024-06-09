@@ -217,12 +217,20 @@ export const skillsData = [
 
 export const experiencesData = [
   {
-    title: "Frontend Software Engineer",
-    location: "Faz Studios",
+    title: "Frontend Software Engineer (part-time)",
+    location: "Broadbits",
     description:
-      "Currently, I am working remotely full-time as a Frontend Software Engineer within this organization.",
+      "Currently, I am working remotely part-time as a Frontend Software Engineer within this organization.",
     icon: createElement(MdWorkOutline),
-    date: "October, 2023 - present",
+    date: "February, 2024 - present",
+  },
+  {
+    title: "Frontend Software Engineer",
+    location: "Faz Studio",
+    description:
+      "I used to work full-time as a Frontend Software Engineer within this organization.",
+    icon: createElement(MdWorkOutline),
+    date: "October, 2023 - February, 2024",
   },
   {
     title: "Frontend Developer",
