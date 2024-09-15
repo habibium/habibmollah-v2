@@ -57,24 +57,24 @@ export default function Intro() {
           </motion.p>
           <motion.h1
             className="mx-auto select-none text-5xl font-extrabold leading-none !tracking-tighter sm:text-6xl lg:text-8xl"
-            aria-label="Habib Mollah"
+            aria-label="Habibur Rahman"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
             <span
-              data-content="Habib"
+              data-content="Habibur"
               className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:inline-block before:w-full before:animate-gradient-background-1 before:text-center before:text-black before:content-[attr(data-content)] before:dark:text-white"
             >
               <span className="inline-block animate-gradient-foreground-1 bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text px-1 text-transparent">
-                Habib
+                Habibur
               </span>
             </span>{" "}
             <span
-              data-content="Mollah"
+              data-content="Rahman"
               className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:inline-block before:w-full before:animate-gradient-background-2 before:text-center before:text-black before:content-[attr(data-content)] before:dark:text-white"
             >
               <span className="inline-block animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text px-1 text-transparent">
-                Mollah
+                Rahman
               </span>
             </span>
           </motion.h1>
