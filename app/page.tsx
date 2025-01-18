@@ -8,7 +8,7 @@ import Skills from "@/components/Skills";
 
 export default function Index() {
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="mt-24 flex flex-col items-center px-4 sm:mt-0">
       <Intro />
       <SectionDivider />
       <About />
