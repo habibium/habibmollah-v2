@@ -7,13 +7,15 @@ export default function Warning() {
           time. For the latest data about me, here's my{" "}
           <a
             className="font-bold underline"
-            href="https://drive.google.com/file/d/10V3t6I-lfilx0hB72HpVLv5HzCjuVJUo/view?usp=drive_link"
+            target="_blank"
+            href="https://drive.google.com/file/d/1haGl_E24kii3MQ2sSUY6PjQsoYLBFUPZ/view?usp=sharing"
           >
             resume
           </a>{" "}
           and{" "}
           <a
             className="font-bold underline"
+            target="_blank"
             href="https://linkedin.com/in/habibium"
           >
             LinkedIn
